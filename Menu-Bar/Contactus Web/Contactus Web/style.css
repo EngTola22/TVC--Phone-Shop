@@ -1,0 +1,531 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: #ffffff ;
+    height: 100vh;
+  
+}
+main{ 
+    margin: 0 17%;
+    display: flex;
+    
+
+}  
+header {
+    margin: 0 17%;
+    display: block;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #F6F9FC;
+      padding: 10px 20px;
+    }
+    
+    .logo {
+      display: flex;
+      font-size: 24px;
+      font-weight: bold;
+      
+      
+    }
+    .logo a{
+      display: flex;
+      text-decoration: none;
+      padding: 5px;
+      color: #000;
+    }
+    .logo a:hover{ 
+      box-shadow: 3px ;
+      padding: 5px;
+      border-radius: 10px;
+    }
+    .navbar h1 {
+        text-shadow: 2px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-left: 9px;
+      box-sizing: border-box;
+      padding: 18px;
+      
+    }
+
+   .logo h1{
+       color: rgb(0, 0, 0);
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count:infinite;
+      }
+      
+      @keyframes example {
+        from {color:#003ef8;}
+        to {color: rgb(5, 152, 7);}
+        from {color:#f81d00;}
+        to {color: rgb(255, 153, 0);}
+        from {color:#f80019;}
+        to {color: rgb(255, 0, 191);}
+      }
+    
+    .logo img {
+      height: 60px;
+      width: 100;
+      border-radius: 7px;
+  
+    }
+    
+    .search-container {
+        width: 60%;
+      max-width: 900px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    
+    /* Style for the search input field */
+    .search-input {
+      width: 80%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      font-size: 16px;
+      background-color: #dde0ea ;
+      border:#535354;
+    }
+    
+    /* Style for the search button */
+    .search-btn {
+      padding: 10px 20px;
+      background-color: #4a7bd6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+    
+    .search-btn:hover {
+        background-color: #144194;
+        box-shadow: 0px 0px 10px  #1a58cd;
+    }
+    
+    /* Responsive design for smaller screens */
+    @media (max-width: 600px) {
+      .search-container {
+        width: 90%;
+      }
+      .search-input {
+        width: 70%;
+      }
+    }
+    
+    .account-section {
+      align-items: center;
+      text-align: right;
+    }
+    
+    .account-icon {
+      font-size: 24px;
+      color: #a562fc;
+    }
+    
+    .account-text {
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 1.2;
+      color: #000;
+    }
+    .account-text:hover{
+      color: #69cae2;
+      transition: 0.2s;
+    }
+    
+    /* menubar */
+  
+  .menu-bar {
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #144194; /* Green background */
+    /* padding: 10px 0; */
+    margin-bottom: 0;
+  }
+                                                  
+  
+  .dropdown {
+    position: relative;
+    
+  }
+                                                            /* HOME BOTTON */
+.home-button {
+            padding: 15px 30px;
+            /* background-color: #007BFF; */
+            color: white;
+            border: none;
+            /* border-radius: 5px; */
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .home-button:hover {
+            background-color: #0056b3;
+            height: auto;
+        }
+        .home-button:active {
+            transform: translateY(1px);
+        }
+  .dropbtn {
+    /* background-color: #33ff33; */
+    
+    font-weight: normal;
+    font-family: "Poppins", "Hanuman";
+    font-size: 1rem;
+    background-color: #144194;
+    border: none;
+    font-size: 16px;
+    /* font-weight: bold; */
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+  }
+  .dropbtn a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-weight: normal;
+    font-family: "Poppins", "Hanuman";
+    font-size: 16px;
+  }
+  
+  .dropbtn:hover {
+    background-color: #062050;
+    color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    /* border: 2px solid #ff6666; Red border */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: write;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: white;
+    color: black;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: white;
+    color: #062050;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/* Media For fit the page when zoom page */
+    @media only screen and (max-width: 768px) {
+      .navbar{
+        flex-direction: column;
+        text-align: center;
+      }
+      .search-input {
+        /* border: none;
+        outline: none;
+        padding: 10px; */
+        margin: 0 60px;
+        /* flex: 1; */
+        font-size: 12px;
+        
+      }
+      .menu-bar{
+        flex-direction: column;
+        text-align: center;
+      }
+      .section{
+        flex-direction: column;
+        text-align: center;
+      }
+      .card {
+        width: calc(50% - 40px);
+      }      
+    }
+
+
+
+
+
+ /*main contain */
+
+.containter-web-py3{
+    display: flex;
+}
+.containter-web-py3 .container{
+    display: block;
+    
+}
+.containter-web-py3 .container .container-contact-us{
+    color: rgb(43, 15, 255);
+    
+}
+
+/*  class manage card boxs*/
+.container .container-row-about{
+    display: flex;
+}
+
+/* card box 1 contact number with the text */
+.container .container-row-about .col-box-1-contact{
+   
+
+    display:block;
+    align-items: center;
+    justify-content: center;
+}
+.col-box-1-contact .mb-1{
+ 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    padding: 20px;
+}   
+.col-box-1-contact .mb-2-img{
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.mb-2-img img{
+    margin: 0 10%;
+    width:80%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* card box 2 input number with the text */
+
+.container .container-row-about .col-box-2-contact{
+    background-color: #f3f5fd  ;
+    color: #003ef8;
+    display: flex;
+  
+}
+.col-box-2-contact .col-box-3-contact{
+    display: block;
+
+    justify-content: center;
+    align-items: center;
+ 
+}
+.col-box-3-contact .text-primary-box-2{
+    
+    display: block;
+    font-size: 20px;
+    padding: 25px;
+
+    
+}
+.col-box-3-contact .form-text-input{
+    display: block;
+    width:100%;
+    height: auto;
+    color: rgb(54, 53, 53);
+    
+}
+.form-text-input .form-group{
+    box-sizing: border-box;
+    padding: 7px;
+    margin-bottom: 5px;
+    
+}
+.form-group{
+    display: block;
+    height: auto;
+    width: 100%;
+   
+}
+.form-group label{
+    font-size: 20px;
+}
+.form-group input{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border-color: #f3f5fd;
+        
+}
+.form-group #mes{
+    padding: 0 0 90px;
+    
+}
+.form-group-btn{
+    text-align: center;
+    padding: 5px;
+}
+.form-group-btn #sub-but{
+    color: #f3f5fd;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #144194;
+    border-radius: 5px;
+    
+}
+.form-group-btn #sub-but:hover{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #003290;
+    box-shadow: 0px 0px 15px  #3d81ff;
+    cursor: pointer;
+    
+    
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 1024px) {
+    main{
+        margin: 0 5%;
+    }
+    
+    .form-group label{
+        font-size: 20px;
+    }
+    .form-group input{
+        width: 100%;
+        padding: 7px;     
+    }
+  }
+  @media screen and (max-width: 768px) {
+    main{
+        margin: 0 5%;
+    }
+    .form-group label{
+        font-size: 20px;
+    }
+    .form-group input{
+        padding: 7px;
+        background-color: rgb(255, 255, 255);
+    }
+   .col-box-3-contact{
+    width: 100%auto;
+   }
+   .mb-2-img img{
+    margin: 0 5%;
+    width:90%;
+  }
+  }@media screen and (max-width: 450px) {
+    main{
+        margin:0;
+        display: block;
+    }
+    .container-row-about{
+        flex-wrap: wrap; 
+    }
+    .col-box-3-contact{
+        width: 80%;
+       }
+       .form-group{
+        justify-content: center;
+        align-items: center;
+        margin:0 13%;
+       }
+    .form-group-btn #sub-but{
+        margin:0 50%;
+        font-size: 15px;
+       }
+    .form-group label{
+        font-size: 20px;
+    }
+    .form-group input{
+        padding: 7px;
+        background-color: rgb(255, 255, 255);
+    }
+   .mb-2-img img{
+    margin: 0 5%;
+    width:90%;
+  }
+  }
+
+  /* footer */
+
+
+
+.footer {
+   margin: 0 17%;
+   background-color: #F6F9FC; /* Light gray background */
+    padding: 20px 40px;
+    
+  }
+  
+  .footer-container {
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+  }
+  
+  .footer-column {
+    display: block;
+    flex: 1;
+    
+  }
+  
+  .footer-column h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    
+  } 
+  
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #000; /* Black text color */
+  }
+  
+  .footer-column ul li a:hover {
+    color: #003ef8;
+  }
+
+
+    @media screen and (max-width: 4001px) {
+        
+    }
+    @media screen and (max-width: 2501px) and (max-width: 4000px) {
+        
+    }
+    @media screen and (min-width: 1600px) and (max-width: 2500px) {
+    }
+    
+    @media screen and (max-width: 1599px) {
+    }
+
+   

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="stylish.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+      .fa-instagram{
+        background-image: linear-gradient(#f9ce34,#ee2a7b,#6228d7);
+        padding: 1px;
+        border-radius: 3px;
+        color: aliceblue;
+        
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+    <div class="wrapper">
+      <div class="title">Login Form</div>
+      <form action="#">
+        <div class="field">
+          <input type="text" required />
+          <label>Email Address</label>
+        </div>
+        <div class="field">
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Remember me</label>
+          </div>
+          <div class="pass-link">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <div class="field">
+          <input type="submit" value="Login" />
+        </div>
+        <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+      </form>
+    </div>  
+        <div class="contactus">
+            <div class="img-backgorund">
+              <img src="../Form_Login/img/contactus-pc-png.png">
+            </div>
+            <div class="link-contact">
+              <h3>Follow Us</h3>
+              <ul >
+                  <li><a href="https://www.facebook.com/RakkhieCha5/map">Facebook </a><i class="fa-brands fa-facebook" style="color: #0008ff;"></i></li>
+                  <li><a href="#">Telegram </a><i class="fa-brands fa-telegram" style="color: #367df7;"></i></li>
+                  <li><a href="#">Instagram </a><i class="fa-brands fa-instagram"></i></li>
+              </ul>
+            </div>
+        </div>
+
+        
+
+   
+       
+      </div>
+    </div>
+      <script>
+        const wrapper = document.querySelector(".wrapper"),
+          signupHeader = document.querySelector(".signup header"),
+          loginHeader = document.querySelector(".login header");
+        loginHeader.addEventListener("click", () => {
+          wrapper.classList.add("active");
+        });
+        signupHeader.addEventListener("click", () => {
+          wrapper.classList.remove("active");
+        });
+      </script>
+    </section>
+  </body>
+</html>
